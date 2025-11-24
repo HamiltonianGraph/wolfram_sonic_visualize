@@ -156,4 +156,6 @@ def make_ca_av(rule_num=110,
 
 
 if __name__ == "__main__":
-    make_ca_av(rule_num=110, out_base="ca_rule110")
+    for i in range(1,256):
+        print(str(i) + "/255")
+        make_ca_av(rule_num=i, out_base=f"ca_rule{i}")
